@@ -4,10 +4,11 @@ $(".has_a_sub>a").click(function(){
 })
 */
 
+/*
 var win_width = $(window).width();
-/* вводим переменную */
-console.log($(window).width());
-/* выводим переменную в лог */
+/* вводим переменную 
+console.log($(window).width()); 
+/* выводим переменную в лог 
 if(win_width<980){
   console.log("Этот экран меньше 980");
   $(".has_a_sub>a").click(function(event){
@@ -31,4 +32,70 @@ $(".mobile_menu_back, .close").click(function () {
 });
 $(".search>.fa-search").click(function () {
   $(".search_block").fadeToggle(300);
+});
+*/
+$(".slider_1").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  speed: 500,
+  fade: true,
+  infinite: true,
+  swipeToSlide: true,
+  adaptiveHeight: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    }
+  ]
+});
+$(".slider_2").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  speed: 500,
+  fade: true,
+  infinite: true,
+  swipeToSlide: true,
+  adaptiveHeight: true,
+});
+$(".slider_3").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  speed: 500,
+  fade: true,
+  infinite: true,
+  swipeToSlide: true,
+  adaptiveHeight: true,
+});
+$(".slider_4").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  speed: 500,
+  fade: true,
+  infinite: true,
+  swipeToSlide: true,
+  adaptiveHeight: true,
+});
+$(".slider_5").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  speed: 500,
+  fade: true,
+  infinite: true,
+  swipeToSlide: true,
+  adaptiveHeight: true,
+});
+$(".slider_6").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  speed: 500,
+  fade: true,
+  infinite: true,
+  swipeToSlide: true,
+  adaptiveHeight: true,
 });
